@@ -50,6 +50,7 @@
         } else {
             $image = $target_dir.$_FILES['image']['name'];
         }
+        
     }
 ?>
 
@@ -106,8 +107,7 @@
                   <label for="image">Ảnh đại diện</label>
                   <input type="file" class="form-control-file" name="image" value="<?php if(isset($_FILES['image']['name'])) echo $_FILES['image']['name'];?>">
                 </div>
-                <span class="text-danger"><?php echo $errImage?></span></br>
-                
+                <span class="text-danger"><?php echo $errImage?></span>
                 <button type="submit" name="submit" class="btn btn-primary btn-block" >Đăng ký</button>
                   
             </form>
@@ -117,7 +117,7 @@
            <?php
                 if(empty($_POST['submit'])) {
                     if(($fullname == '') || ($gender == '') || ($address == '') || ($image == '')) {
-                        echo '<h1 class="text-center text-warning">Đăng ký không thành công</h1>';
+                        echo '<h1 class="text-center text-danger">Đăng ký chưa thành công</h1>';
                     } else {
                         echo '<h1 class="text-center text-success">Đăng ký thành công</h1>';
                         echo '<div style=" display: flex;justify-content: center;align-items: center;">
