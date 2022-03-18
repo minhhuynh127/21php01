@@ -17,7 +17,7 @@
             $errFullname = 'Vui lòng nhập họ và tên!!!';
         } else {
             $fullname = ($_POST['fullname']);
-            if(!preg_match("/^[a-zA-Z-' ]*$/", $fullname)) {
+            if(!preg_match("/^[a-zA-Z-' -ạ-á-à-ả-ã]*$/", $fullname)) {
                 $errFullname = 'Chỉ cho phép chữ cái và khoảng trắng';
             }
         }
@@ -68,7 +68,7 @@
                 <!--Birthday-->
                 <div class="form-group">
                     <label for="birthday" class='form-label'>Ngày sinh</label>
-                    <input type="date" name="birthday" value="<?php if(isset($_POST['birthday'])) echo $_POST['birthday'];?>">
+                    <input type="date" class="form-control" name="birthday" value="<?php if(isset($_POST['birthday'])) echo $_POST['birthday'];?>">
                     <span class="text-danger"><?php echo $errDate;?></span>
                 </div>
 
