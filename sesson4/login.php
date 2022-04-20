@@ -19,7 +19,7 @@
             }
             $connect->close();
             if($data != NULL && count($data) > 0) {
-                header("location: http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=myusername&table=username&pos=0");
+                header("location: http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=my_username&table=username&pos=0");
             } else if($username != '') echo '<h3 class="text-center text-danger">Login Fail!!!</h3>'; 
         }
     }

@@ -28,7 +28,7 @@
                 $connect->query($query);
                 // header("location: login.php");
                 // header("location: http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=my_username&table=username&pos=0");
-                header("location: login.php");
+                header("location: list_username.php");
             }
             $connect->close();
         }
