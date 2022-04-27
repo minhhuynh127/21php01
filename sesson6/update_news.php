@@ -46,7 +46,7 @@ if(!empty($_POST)) {
         <div class="col-md-12">
             <div class="panel panel-primary">
                 <div class="panel-heading text-center">
-                    <h3>Thêm mới tin tức</h3>
+                    <h3>UPDATE tin tức</h3>
                 </div>
                 <div class="panel-body">
                     <form action="" method="POST" class="bg-secondary" enctype='multipart/form-data'>
@@ -72,7 +72,7 @@ if(!empty($_POST)) {
                             <label for="avatar_news" class="form-label text-primary">Hình ảnh tin tức</label>
                             <input id="avatar_news" class="form-control" type="file" name="avatar_news">
                         </div>
-                        <button class="btn btn-primary btn-block" type="submit" name="submit">ADD NEWS</button>
+                        <button class="btn btn-primary btn-block" type="submit" name="submit">UPDATE NEW</button>
                     </form>
                 </div>
             </div>
