@@ -2,7 +2,10 @@
     include 'model/model.php';
     class Controller extends Model {
         function handleRequest() {
-            $action = $_GET['action'];
+            $action = '';
+            if(isset($_GET['action'])) {
+                $action = $_GET['action'];
+            }
             switch ($action) {
                 case 'home':
                     echo '<br>';
@@ -19,7 +22,7 @@
                 case 'cart':
                     $this->getCart();
                     include 'view/cart.php';
-                    break;        
+                    break;    
             }
         }
     }

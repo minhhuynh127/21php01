@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
     <div class="container-fluid" style="background-color: #e3f2fd;">
         <div class="row">
             <div class="col-md-2">                   
-                <h3 class="text-success">Trang bán hàng</h3>                   
+                <h3 class="text-success">STORE</h3>                   
             </div>        
             <div class="col-md-10">
                 <div class="container">
@@ -46,7 +47,7 @@
     </div>
     <?php
         include 'controller/controller.php';
-        $controller = new Controller();
+		$controller = new Controller();
 		$controller->handleRequest();
     ?>
 </body>
